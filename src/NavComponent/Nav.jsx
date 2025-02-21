@@ -17,12 +17,7 @@ const Nav = () => {
                             <img src={logo} alt="logo" height="80px" />
                         </Link>
                     </div>
-                    <div id='searchbar' style={{
-                        display: 'flex', alignItems: 'center', gap: '20px',
-                        '@media (max-width: 480px)': {
-                            display: 'none'
-                        }
-                    }}>
+                    <div id='searchbar' style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
                         <label htmlFor='search' style={{ backgroundColor: 'whitesmoke', border: '1px solid whitesmoke', height: '45px', width: '450px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderRadius: '5px', overflow: 'hidden', boxShadow: '0px 5px 10px #e2e6e9' }}>
                             <input type="text" placeholder='Search Products' style={{ background: 'transparent', outline: 'none', border: 'none', height: '100%', padding: '0px 20px' }} />
                             <i class="fa-solid fa-magnifying-glass" id='search' style={{ backgroundColor: 'slategrey', color: 'white', height: '100%', width: '45px', placeContent: 'center', textAlign: 'center' }}></i>
