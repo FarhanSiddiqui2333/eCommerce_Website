@@ -971,22 +971,21 @@ const Cart = () => {
     setItemData(cartItem)
   }, [])
 
-
   return (
     <>
-    <Nav />
-    <Navlink />
+      <Nav />
+      <Navlink />
       <div>
         {
           itemData.map((item, idx) => {
             return (
-              <div key={idx} style={{ display: 'flex', gap: '50px' , height:'auto', width:'100%', justifyContent:'center', alignItems:'center', margin:'50px auto'}}>
+              <div key={idx} style={{ display: 'flex', gap: '50px', height: 'auto', width: '100%', justifyContent: 'center', alignItems: 'center', margin: '50px auto' }}>
                 <div style={{ height: '400px', width: '300px', display: 'flex', flexDirection: 'column', gap: '30px' }}>
-                  <div style={{position:'relative',padding:'20px', height: '80%', width: '100%', boxShadow: '5px 5px 10px lightgrey, 0px 0px 10px #e2e6e9', border: '1px solid #e9e9e9', borderRadius: '20px' }}>
-                    <h4 style={{backgroundColor:'#0f172a', borderRadius:'5px', width:'max-content', padding:'0px 10px', color:'white'}}>{item.category}</h4>
-                    <h2 className='productName' style={{lineHeight:'25px', margin:'10px 0px'}}>{item.title}</h2>
-                    <p className='des' style={{fontSize:'12px', lineHeight:'20px'}}>{item.description}</p>
-                    <h4 style={{position:'absolute', bottom:'15px'}}>{'Price : '+item.price + '$'}</h4>
+                  <div style={{ position: 'relative', padding: '20px', height: '80%', width: '100%', boxShadow: '5px 5px 10px lightgrey, 0px 0px 10px #e2e6e9', border: '1px solid #e9e9e9', borderRadius: '20px' }}>
+                    <h4 style={{ backgroundColor: '#0f172a', borderRadius: '5px', width: 'max-content', padding: '0px 10px', color: 'white' }}>{item.category}</h4>
+                    <h2 className='productName' style={{ lineHeight: '25px', margin: '10px 0px' }}>{item.title}</h2>
+                    <p className='des' style={{ fontSize: '12px', lineHeight: '20px' }}>{item.description}</p>
+                    <h4 style={{ position: 'absolute', bottom: '15px' }}>{'Price : ' + item.price + '$'}</h4>
                   </div>
                   <div style={{ width: '100%', height: '20%', padding: '15px', boxShadow: '5px -5px 10px lightgrey, 0px 0px 10px #e2e6e9, 0px 5px 10px lightgrey', border: '1px solid #e9e9e9', borderRadius: '12px' }}>
                     <button style={{ width: '100%', height: '100%', fontSize: '20px', fontWeight: '900', color: 'white', backgroundColor: '#0f172a', borderRadius: '8px', border: 'none' }}>
