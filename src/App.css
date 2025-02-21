@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", serif;
+}
+
+.hero .content button::before {
+    height: 100%;
+    width: 100%;
+    background-color: #0f172a;
+    color: white;
+    content: "Join Us";
+    position: absolute;
+    border-radius: 12px;
+    place-content: center;
+    left: 100%;
+    top: 0;
+    transition: all 0.25s;
+    animation: btn 8s linear 4s infinite;
+}
+
+/*for btn*/
+@keyframes btn {
+    0% {
+        left: 100%;
+    }
+
+    5% {
+        left: 100%;
+    }
+
+    10% {
+        left: 0%;
+    }
+
+    25% {
+        left: 0;
+    }
+
+    30% {
+        left: 100%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+/*for sliding*/
+@keyframes slider {
+    0% {
+        rotate: 0deg;
+    }
+
+    3% {
+        rotate: -85deg;
+    }
+
+    25% {
+        rotate: -95deg;
+    }
+
+    28% {
+        rotate: -175deg;
+    }
+
+    50% {
+        rotate: -185deg;
+    }
+
+    53% {
+        rotate: -265deg;
+    }
+
+    75% {
+        rotate: -275deg;
+    }
+
+    78% {
+        rotate: -355deg;
+    }
+
+    100% {
+        rotate: -360deg;
+    }
+}
+
+.title {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.feedback {
+    height: auto;
+    width: 100%;
+    background-image: url(.//assets/feedback.png);
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+    background-position-y: 50%;
+    background-color: #e2e6e9;
+}
+
+ul li {
+    list-style: none;
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+
+ul .foothead {
+    font-weight: bolder;
+    font-size: 12px;
+}
+
+a {
+    color: #0f172a;
+    text-decoration: none;
+}
+
+.navLink span:hover {
+    background-color: #8d99a6;
+    transition: all 0.25s;
+}
+
+.navLink span:hover a {
+    color: white;
+    transition: all 0.25s;
+}
+
+div span {
+    cursor: pointer;
+}
+
+.helppara {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 7;
+    overflow: hidden;
+}
+
+.form {
+    height: 400px;
+    width: 300px;
+    border-radius: 0px 8px 8px 0px;
+    background-color: #0f172a;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 25px;
+    justify-content: space-between;
+    box-shadow: 0px 5px 10px #0000006b, 0px 0px 5px #0000006b;
+}
+
+.form input {
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid white;
+    padding: 0px 10px;
+    font-size: 14px;
+    outline: none;
+    color: white;
+}
+
+.form label input {
+    height: max-content;
+    cursor: pointer;
+}
+
+.form label p {
+    color: white;
+    font-size: 12px;
+}
+
+.form label {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.form .submit {
+    font-size: 18px;
+    border: none;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.658);
+    border-radius: 5px;
+    color: #0f172a;
+    font-weight: 900;
+}
+
+.sign label {
+    display: flex;
+    width: 100%;
+    gap: 25px;
+}
+
+.sign label input,
+.sign label select {
+    height: 40px;
+    width: 100%;
+    padding: 0px 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: #0f172a;
+}
+
+.sign .submit {
+    height: 40px;
+    background-color: #8d99a6;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    width: 50%;
+    place-self: center;
+    font-weight: 900;
+    box-shadow: 0px 0px 5px grey;
+}
+
+.sign .agree input {
+    width: max-content;
+    height: 20px;
+}
+
+.sign .agree p {
+    font-size: 12px;
+    color: white;
+}
+
+.sign .agree {
+    gap: 8px;
+    align-items: center;
+}
+.des{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+    overflow: hidden;
+}
+.productName{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+.category button{
+    border: none;
+    background-color: transparent;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.category button:focus{
+    background-color:#8d99a6;
+    color: white;
+    transition: all 0.25s;
+}
