@@ -103,7 +103,7 @@ const Products = () => {
   console.log(fetchproduct);
 
   const print = (title) => {
-    let storage = localStorage.setItem('data', title)
+    localStorage.setItem('data', title)
   }
 
 
