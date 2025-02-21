@@ -44,7 +44,7 @@ const Footer = () => {
                     <li>EarRings</li>
                 </ul>
             </div>
-            <div style={{ display: 'flex', justifyContent: 'space-between', padding: '5px 40px',paddingBottom:'8px', fontSize: '10px', color: 'white', backgroundColor: '#0f172a', alignItems:'center' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', padding: '5px 40px', paddingBottom: '8px', fontSize: '10px', color: 'white', backgroundColor: '#0f172a', alignItems: 'center' }}>
                 <span>Copyright <i class="fa-solid fa-copyright"></i> by 2025</span>
                 <span><i class="fa-solid fa-globe"></i> Region / Language</span>
                 <span> Designed By Farhan Zakir</span>
