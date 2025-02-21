@@ -963,7 +963,7 @@ const ProductPage = ({ count }) => {
 
     return (
         <>
-            <Nav />
+             <Nav />
             <CategoryBTN sortData={sortData} />
             <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around', padding: '40px' }}>
                 {
@@ -974,7 +974,7 @@ const ProductPage = ({ count }) => {
                                 <img src={item.image} alt="images" style={{ height: '80%', width: '100%', aspectRatio: '3/4', objectFit: 'contain', mixBlendMode: "multiply", borderRadius: '16px 50px 50px 50px' }} />
                                 <h4 className='title' style={{ marginTop: '5px', lineHeight: '17px', padding: "0px 10px", color: '#0f172a' }}>{item.title}</h4>
                                 <span style={{ padding: "0px 10px", position: 'absolute', bottom: '10px', color: '#0f172a', fontSize: '14px', fontWeight: '700' }}>{item.price + '$'}</span>
-                                <button onClick={(i) => { print(item.title) }} style={{ padding: '5px 15px', border: 'none', borderRadius: '4px', backgroundColor: '#0f172a', color: 'white', position: 'absolute', bottom: '10px', right: '15px', fontWeight: '800' }}><Link to='/cart' style={{color:'white'}}>Shop</Link></button>
+                                <button onClick={(i) => { print(item.title) }} style={{ padding: '5px 15px', border: 'none', borderRadius: '4px', backgroundColor: '#0f172a', color: 'white', position: 'absolute', bottom: '10px', right: '15px', fontWeight: '800' }}><Link to='/cart' style={{ color: 'white' }}>Shop</Link></button>
                             </div>
                         )
                     })
