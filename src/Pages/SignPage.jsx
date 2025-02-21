@@ -6,6 +6,7 @@ import FeedBack from '../FeedComponent/FeedBack'
 import Footer from '../FooterComponent/Footer'
 
 const SignPage = () => {
+
   const [firstName, setFirstName] = useState("")
   const [lastName, setLastName] = useState("")
   const [userName, setUserName] = useState("")
