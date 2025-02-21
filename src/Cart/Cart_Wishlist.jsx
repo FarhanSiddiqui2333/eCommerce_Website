@@ -7,6 +7,7 @@ import EmptyBG from '../assets/empty.png'
 import { Link } from 'react-router-dom'
 
 const Cart_Wishlist = () => {
+  
   return (
     <>
       <Nav />
