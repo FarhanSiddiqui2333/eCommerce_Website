@@ -6,9 +6,11 @@ import FeedBack from '../FeedComponent/FeedBack'
 import { Link } from 'react-router-dom'
 
 const LoginPage = () => {
+
     const [userName, setUserName] = useState("")
     const [userEmail, setUserEmail] = useState("")
     const [userPassword, setUserPassword] = useState("")
+
     return (
         <>
             <Nav />
