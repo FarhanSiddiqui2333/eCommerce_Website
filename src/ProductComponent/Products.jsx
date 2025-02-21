@@ -125,7 +125,7 @@ const Products = () => {
               <img src={item.image} alt="images" style={{ height: '80%', width: '100%', borderRadius: '5px', aspectRatio: '3/4', objectFit: 'contain', mixBlendMode: 'multiply' }} />
               <h4 className='title' style={{ marginTop: '5px', lineHeight: '17px', padding: "0px 10px", color: '#0f172a' }}>{item.title}</h4>
               <span style={{ padding: "0px 10px", position: 'absolute', bottom: '10px', color: '#0f172a', fontSize: '14px', fontWeight: '700' }}>{item.price + '$'}</span>
-              <button onClick={() => print(item.title)} style={{ padding: '5px 15px', border: 'none', borderRadius: '4px', backgroundColor: '#0f172a', position: 'absolute', bottom: '10px', right: '15px', fontWeight: '800' }}><Link to='/cart' style={{color:'white'}}>Shop</Link></button>
+              <button onClick={() => print(item.title)} style={{ padding: '5px 15px', border: 'none', borderRadius: '4px', backgroundColor: '#0f172a', position: 'absolute', bottom: '10px', right: '15px', fontWeight: '800' }}><Link to='/cart' style={{ color: 'white' }}>Shop</Link></button>
             </div>
           ))
         }
