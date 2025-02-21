@@ -106,7 +106,6 @@ const Products = () => {
     localStorage.setItem('data', title)
   }
 
-
   return (
     <>
       <div style={{ height: 'auto', margin: '50px 0px', padding: '20px 50px', width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'center', textAlign: 'center', border: "1px solid lightgrey", borderRight: 'none', borderLeft: 'none', flexWrap: 'wrap' }}>
