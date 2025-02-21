@@ -236,19 +236,22 @@ div span {
     gap: 8px;
     align-items: center;
 }
-.des{
+
+.des {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 6;
     overflow: hidden;
 }
-.productName{
+
+.productName {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
     overflow: hidden;
 }
-.category button{
+
+.category button {
     border: none;
     background-color: transparent;
     font-weight: 700;
@@ -256,8 +259,9 @@ div span {
     padding: 10px 20px;
     border-radius: 5px;
 }
-.category button:focus{
-    background-color:#8d99a6;
+
+.category button:focus {
+    background-color: #8d99a6;
     color: white;
     transition: all 0.25s;
 }
